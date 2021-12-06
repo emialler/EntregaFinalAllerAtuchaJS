@@ -1,0 +1,65 @@
+[{
+        "id": 1,
+        "nombre": "Oso",
+        "alto": "40cm",
+        "ancho": "20cm",
+        "precio": 800,
+        "imagen": "images/oso.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Conejo",
+        "alto": "40cm",
+        "ancho": "15cm",
+        "precio": 900,
+        "imagen": "images/conejo.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Mono",
+        "alto": "50cm",
+        "ancho": "30cm",
+        "precio": 1000,
+        "imagen": "images/mono.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Perro",
+        "alto": "30cm",
+        "ancho": "30cm",
+        "precio": 800,
+        "imagen": "images/perro.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Llama",
+        "alto": "20cm",
+        "ancho": "30cm",
+        "precio": 600,
+        "imagen": "images/llama.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Hipopótamo",
+        "alto": "40cm",
+        "ancho": "25cm",
+        "precio": 1000,
+        "imagen": "images/hipopotamo.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Zorro",
+        "alto": "30cm",
+        "ancho": "40cm",
+        "precio": 900,
+        "imagen": "images/zorro.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Cienpies",
+        "alto": "10cm",
+        "ancho": "50cm",
+        "precio": 1100,
+        "imagen": "images/logoweb.png"
+    }
+]

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/75d1be03e7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Memé - Amigos Tejidos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html" class="navbar-brand"><img class="d-inline-block align-top" src="images/logoweb.png" alt="logo" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarToggleExternalContent">
+                <ul class="navbar-nav">
+                    <li class="nav item"><a class="nav-link" href="index.html#nosotros">Sobre Nosotros</a></li>
+                    <li class="nav item"><a class="nav-link" href="index.html#productos">Productos</a></li>
+                    <li class="nav item"><a class="nav-link" href="index.html#cuidados">Cuidados</a></li>
+                    <li class="nav item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav item"><button class="btn position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-shopping-cart"></i><span id="badge" class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle hidden"></span></button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="presentacion">
+            <div id="opacidad"></div>
+            <div id="frase">
+                <h1>Memé - Amigos Tejidos</h1>
+                <p>Muñecos tejidos a crochet que acompañan la crianza con apego<span>&#160;</span></p>
+            </div>
+        </section>
+        <section id="nosotros" class="card">
+            <h2>Quienés somos?</h2>
+            <p>Hola! Soy Ana, mamá de cuatro, abuela babosa de uno y maestra jubilada de nivel inicial. Tejo muñecos a crochet que acompañan la crianza, además de adornos y objetos de decoración, almohadones, mantas y todo lo que se te ocurra! Trabajo con stock, a pedido y personalizados.</p>
+        </section>
+        <section id="productos" class="card">
+            <h2>Productos</h2>
+            <div>
+                <ul id="listaProductos">
+
+                    <!-- ACA VAN LAS CARDS -->
+
+                </ul>
+            </div>   
+        </section>
+        <section id="cuidados" class="card">
+            <h2>Cuidados</h2>
+            <div id="seccionCuidados">
+                <div class="card">
+                    <i class="fas fa-sink"></i>
+                    <h5>Lavar a mano</h5>
+                </div>
+                <div class="card">
+                    <i class="fas fa-pump-soap"></i>
+                    <h5>Usar jabón blanco</h5>
+                </div>
+                <div class="card">
+                    <i class="fas fa-ban"></i>
+                    <h5>No retorcer</h5>
+                </div>
+                <div class="card">
+                    <i class="fas fa-sun"></i>
+                    <h5>Secar al sol</h5>
+                </div>
+            </div>   
+        </section>
+        <section id="contacto" class="card">
+            <h2>Contacto</h2>
+            <h5>Dejanos tu consulta o sugerencia</h5>
+            <form action="" id="form">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="nombre">Nombre y Apellido:</label>
+                            <input type="text" name="nombre" id="formNombre" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="formEmail" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="consulta">Consulta o sugerencia:</label>
+                            <textarea name="consulta" id="formTexto" cols="15" rows="4" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group botonSubmit">
+                            <input type="submit" id="btnSubmit" class="btn btn-secondary" value="Enviar" class="form-control">
+                        </div>
+                    </div>
+                </div>          
+            </form>
+        </section>
+
+        <!-- CARRITO OFFCANVAS BOOTSTRAP -->
+        <section>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <h2>Carrito</h2>
+                    <div id="contenedorCarrito">
+                        <table class="table table-borderless">
+                            <thead>
+                                <th></th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </thead>
+                            <tbody id="tablaBody">
+                                <!-- ACA VA EL CARRITO -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="pago">
+                        <button type="button" id="botonDePago" disabled class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ir al pago</button>
+                        <p id="totalCarrito"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL DE PAGO --> 
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Finalizar Compra</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" id="botonFinalizarCompra" class="btn btn-primary">Finalizar Compra</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Seguinos en nuestras redes</h2>
+        <div>
+            <a href="https://www.instagram.com/memeamigostejidos" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/meme.amigostejidos" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/jquery.js"></script>
+</body>
+</html>
