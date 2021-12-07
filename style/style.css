@@ -277,6 +277,14 @@ form label {
     font-weight: bold;
 }
 
+#totalModal {
+    color: #574646;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
 footer {
     color: #574646;
     display: flex;

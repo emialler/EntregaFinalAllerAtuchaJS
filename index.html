@@ -84,7 +84,7 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="nombre">Nombre y Apellido:</label>
-                            <input type="text" name="nombre" id="formNombre" class="form-control">
+                            <input type="text" name="nombre" id="formNombre" class="form-control" maxlength="50">
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail:</label>
@@ -94,7 +94,7 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="consulta">Consulta o sugerencia:</label>
-                            <textarea name="consulta" id="formTexto" cols="15" rows="4" class="form-control"></textarea>
+                            <textarea name="consulta" id="formTexto" cols="15" rows="4" class="form-control" minlength="5" maxlength="500"></textarea>
                         </div>
                         <div class="form-group botonSubmit">
                             <input type="submit" id="btnSubmit" class="btn btn-secondary" value="Enviar" class="form-control">
@@ -144,7 +144,7 @@
                     <div class="modal-body" id="modalBody">
                     </div>
                     <div class="modal-footer">
-                      <button type="button" id="botonFinalizarCompra" class="btn btn-primary">Finalizar Compra</button>
+                      <button type="button" id="botonFinalizarCompra" class="btn btn-secondary">Finalizar Compra</button>
                     </div>
                   </div>
                 </div>
